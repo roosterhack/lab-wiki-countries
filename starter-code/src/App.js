@@ -30,7 +30,7 @@ class App extends Component {
             </div>
             <div className="col-7">
               <Switch>
-                <Route path="/:cca3" component={CountryDetail} />
+                <Route exact path="/:cca3" component={CountryDetail} />
               </Switch>
 
             </div>

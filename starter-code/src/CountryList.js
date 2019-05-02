@@ -7,7 +7,7 @@ export class CountryList extends Component {
     const { countries } = this.props
     const countryList = countries.map((country, i) => {
       return (
-        <Link to={`/${country.cca3}`} className="list-group-item list-group-item-action" key={i}>
+        <Link to={`/${country.cca3}`} className="list-group-item list-group-item-action" key={country.cca3}>
           <span>{country.flag}</span>
           <h4>{country.name.common}</h4>
         </Link>
